@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import WelcomeBanner from "../../../public/images/banner/welcome-banner.jpeg";
+import WelcomeBanner from "../../../public/images/banner/welcome-banner.webp"
 
 const WelcomeSection = () => {
   return (

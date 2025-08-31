@@ -11,13 +11,17 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-6 py-2">
-        <Link href="/" aria-label="Rajan Service Home" className="block flex-shrink-0 w-40">
+        <Link
+          href="/"
+          aria-label="Rajan Service Home"
+          className="block flex-shrink-0 w-40"
+        >
           <Image
             src="/images/Logo/Logo.png"
             alt="Rajan Service Logo"
             width={160}
             height={64}
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: "contain", height: "auto" }}
             priority
           />
         </Link>
@@ -47,13 +51,25 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-t shadow-sm">
           <nav className="flex flex-col px-6 py-4 gap-4 text-gray-600 font-medium">
-            <Link href="/about" onClick={() => setIsOpen(false)} className="hover:text-gray-900">
+            <Link
+              href="/about"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-gray-900"
+            >
               About
             </Link>
-            <Link href="/services" onClick={() => setIsOpen(false)} className="hover:text-gray-900">
+            <Link
+              href="/services"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-gray-900"
+            >
               Services
             </Link>
-            <Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-900">
+            <Link
+              href="/contact"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-gray-900"
+            >
               Contact
             </Link>
           </nav>
