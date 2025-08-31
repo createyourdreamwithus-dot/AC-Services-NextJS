@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 export default function CounterSection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20 scroll-mt-24" id="about">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-semibold text-center mb-16 text-gray-800">
           Numbers Speakers.

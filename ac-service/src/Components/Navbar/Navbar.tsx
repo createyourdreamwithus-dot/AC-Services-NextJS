@@ -27,13 +27,13 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-gray-600 font-medium">
-          <Link href="/about" className="hover:text-gray-900">
+          <Link href="/#about" className="hover:text-gray-900">
             About
           </Link>
-          <Link href="/services" className="hover:text-gray-900">
+          <Link href="#services" className="hover:text-gray-900">
             Services
           </Link>
-          <Link href="/contact" className="hover:text-gray-900">
+          <Link href="#Contact" className="hover:text-gray-900">
             Contact
           </Link>
         </nav>
@@ -52,21 +52,21 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t shadow-sm">
           <nav className="flex flex-col px-6 py-4 gap-4 text-gray-600 font-medium">
             <Link
-              href="/about"
+              href="/#about"
               onClick={() => setIsOpen(false)}
               className="hover:text-gray-900"
             >
               About
             </Link>
             <Link
-              href="/services"
+              href="/#services"
               onClick={() => setIsOpen(false)}
               className="hover:text-gray-900"
             >
               Services
             </Link>
             <Link
-              href="/contact"
+              href="/#Contact"
               onClick={() => setIsOpen(false)}
               className="hover:text-gray-900"
             >
