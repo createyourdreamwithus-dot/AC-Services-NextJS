@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import WelcomeBanner from "../../../public/images/banner/welcome-banner.webp"
+import WelcomeBanner from "../../../public/images/banner/welcome-banner.webp";
 
 const WelcomeSection = () => {
   return (
@@ -10,10 +10,7 @@ const WelcomeSection = () => {
         <section className="welcome-banner-container mt-15">
           <div className="flex flex-col md:flex-row justify-between gap-16">
             <div className="w-full md:w-2.5/5">
-              <Image
-                src={WelcomeBanner}
-                alt="welocme-banner"
-              ></Image>
+              <Image src={WelcomeBanner} alt="welocme-banner"></Image>
             </div>
             <div className="w-full md:w-2.3/5">
               <h4 className="text-[#38373c] font-medium text-[20px] relative before:content-[''] before:absolute before:left-0 before:top-0 before:h-[3px] before:w-[25px] before:bg-[#38adb6] pt-5">
