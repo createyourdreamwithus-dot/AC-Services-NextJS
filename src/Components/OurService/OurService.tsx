@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import ACServiceImg from "../../../public/images/banner/service-1.webp";
-import WashingMechineService from "../../../public/images/banner/service-2.webp";
-import DTHService from "../../../public/images/banner/service-3.webp";
+import ACServiceImg from "../../../public/images/banner/service-1.jpg";
+import WashingMechineService from "../../../public/images/banner/service-2.jpg";
+import DTHService from "../../../public/images/banner/service-3.jpg";
 import Link from "next/link";
 import { IoIosSnow } from "react-icons/io";
 import { CgSmartHomeWashMachine } from "react-icons/cg";
