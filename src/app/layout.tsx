@@ -9,11 +9,35 @@ import { PhoneButton } from "@/Components/PhoneButton/PhoneButton";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // Note: use 'weight' key (not weights)
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Ac Service",
+  title: "Rajan AC Services – AC, Washing Machine & RO Installation in Chennai",
+  description:
+    "Rajan AC Services offers expert installation and repair services for Air Conditioners, Washing Machines, and RO Water Purifiers in Chennai. Fast, affordable, and reliable service you can trust.",
+  keywords: [
+    "AC service Chennai",
+    "Washing machine repair",
+    "RO installation",
+    "AC installation Chennai",
+    "Rajan AC Services",
+    "Home appliance repair Chennai",
+  ],
+  authors: [{ name: "Rajan AC Services", url: "https://yourdomain.com" }],
+  creator: "Rajan AC Services",
+  openGraph: {
+    title: "Rajan AC Services – Expert AC, Washing Machine & RO Installation",
+    description:
+      "Reliable and affordable installation & maintenance services for ACs, Washing Machines, and RO Purifiers in Chennai. Book your service now!",
+    url: "https://yourdomain.com",
+    siteName: "Rajan AC Services",
+    locale: "en_IN",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://yourdomain.com",
+  },
 };
 
 export default function RootLayout({

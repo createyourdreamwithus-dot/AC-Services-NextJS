@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { FaSnowflake, FaTshirt, FaWater, FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const services = [
   {
@@ -51,8 +52,8 @@ export default function ServiceCards() {
                   hover:scale-[1.02] hover:shadow-xl 
                   ${
                     selectedService.id === service.id
-                      ? "border-cyan-500 bg-white backdrop-blur-sm"
-                      : "bg-white/70"
+                      ? "border-2 border-[#000] bg-[#f5d974]"
+                      : "bg-white/70 border border-transparent"
                   }`}
               >
                 <div className="bg-white p-3 rounded-full shadow-inner">
@@ -69,7 +70,6 @@ export default function ServiceCards() {
           </div>
         </div>
 
-        {/* Right - Display */}
         <div className="bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl overflow-hidden transition-all">
           <div className="relative w-full h-80">
             <Image
@@ -84,9 +84,12 @@ export default function ServiceCards() {
               {selectedService.title}
             </h3>
             <p className="text-gray-600 mb-6">{selectedService.description}</p>
-            <button className="inline-flex items-center gap-3 bg-[#f5d974] text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-yellow-400 transition">
-              Book Installation <FaArrowRight size={16} />
-            </button>
+
+            <Link href="/#Contact" passHref>
+              <button className="inline-flex items-center gap-3 bg-[#f5d974] text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-yellow-400 transition">
+                Book Installation <FaArrowRight size={16} />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

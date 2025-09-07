@@ -5,6 +5,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HeroSection() {
   const slides = [
@@ -79,17 +80,18 @@ export default function HeroSection() {
                 >
                   {slide.desc}
                 </motion.p>
-
-                <motion.button
-                  whileHover={{ scale: 1.08 }}
-                  whileTap={{ scale: 0.95 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6, duration: 0.9, ease: "easeOut" }}
-                  className="mt-4 sm:mt-5 bg-[#f5d974] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-xs sm:text-sm md:text-base font-semibold text-gray-900 hover:bg-yellow-500 rounded-lg shadow-lg transition"
-                >
-                  {slide.button}
-                </motion.button>
+                <Link href="#Contact">
+                  <motion.button
+                    whileHover={{ scale: 1.08 }}
+                    whileTap={{ scale: 0.95 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6, duration: 0.9, ease: "easeOut" }}
+                    className="mt-4 sm:mt-5 bg-[#f5d974] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-xs sm:text-sm md:text-base font-semibold text-gray-900 hover:bg-yellow-500 rounded-lg shadow-lg transition"
+                  >
+                    {slide.button}
+                  </motion.button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

@@ -13,27 +13,35 @@ export default function CounterSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center border-t border-b border-gray-200 py-12">
           <div className="flex flex-col items-center justify-center min-h-[180px] px-4">
             <span className="text-5xl font-bold text-[#00bcd4]">
-              <CountUp end={8870} duration={2} separator="," />
+              <CountUp end={570} duration={2} separator="," />
+              <span>+</span>
             </span>
             <p className="text-gray-600 mt-4 leading-snug">
-              AC Repairs &<br />Installations
+              AC Repairs &<br />
+              Installations
             </p>
           </div>
           <div className="flex flex-col items-center justify-center min-h-[180px] px-4">
             <span className="text-5xl font-bold text-[#00bcd4]">
-              <CountUp end={4760} duration={2} separator="," />
+              <CountUp end={260} duration={2} separator="," />
+              <span>+</span>
             </span>
             <p className="text-gray-600 mt-4 leading-snug">
-              Washing Machine<br />Services Done
+              Washing Machine
+              <br />
+              Services Done
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center min-h-[180px] px-4">
             <span className="text-5xl font-bold text-[#00bcd4]">
-              <CountUp end={9032} duration={2} separator="," />
+              <CountUp end={287} duration={2} separator="," />
+              <span>+</span>
             </span>
             <p className="text-gray-600 mt-4 leading-snug">
-              RO Water Purifier<br />Install & Repair
+              RO Water Purifier
+              <br />
+              Install & Repair
             </p>
           </div>
         </div>

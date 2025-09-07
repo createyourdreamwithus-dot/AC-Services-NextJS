@@ -19,7 +19,7 @@ export default function Navbar() {
           <Image
             src="/images/Logo/Logo.png"
             alt="Rajan Service Logo"
-            width={160}
+            width={130}
             height={64}
             style={{ objectFit: "contain", height: "auto" }}
             priority
