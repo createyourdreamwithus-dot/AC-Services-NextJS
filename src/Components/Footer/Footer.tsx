@@ -18,7 +18,7 @@ export default function Footer() {
           <FaEnvelope className="text-[#f5d974]" size={20} />
           <p>
             <span className="font-semibold text-white">Email</span>{" "}
-            help@loazzne.com
+            sirularajan@gmail.com
           </p>
         </div>
 
