@@ -24,19 +24,23 @@ export const metadata: Metadata = {
     "Rajan AC Services",
     "Home appliance repair Chennai",
   ],
-  authors: [{ name: "Rajan AC Services", url: "https://yourdomain.com" }],
+  authors: [{ name: "Rajan AC Services", url: "https://www.acservices.info" }],
   creator: "Rajan AC Services",
   openGraph: {
     title: "Rajan AC Services – Expert AC, Washing Machine & RO Installation",
     description:
       "Reliable and affordable installation & maintenance services for ACs, Washing Machines, and RO Purifiers in Chennai. Book your service now!",
-    url: "https://yourdomain.com",
+    url: "https://www.acservices.info",
     siteName: "Rajan AC Services",
     locale: "en_IN",
     type: "website",
   },
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: "https://www.acservices.info",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
