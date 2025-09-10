@@ -16,14 +16,23 @@ export const metadata: Metadata = {
   title: "Rajan AC Services – AC, Washing Machine & RO Installation in Chennai",
   description:
     "Rajan AC Services offers expert installation and repair services for Air Conditioners, Washing Machines, and RO Water Purifiers in Chennai. Fast, affordable, and reliable service you can trust.",
-  keywords: [
-    "AC service Chennai",
-    "Washing machine repair",
-    "RO installation",
-    "AC installation Chennai",
-    "Rajan AC Services",
-    "Home appliance repair Chennai",
-  ],
+    keywords: [
+      "ac service chennai",
+      "washing machine repair",
+      "ro installation",
+      "ac installation chennai",
+      "rajan ac services",
+      "home appliance repair chennai",
+      "ac services",
+      "ac installation",
+      "water purifier servicing",
+      "ac maintenance",
+      "installation water purifier",
+      "ac repair",
+      "hvac service",
+      "split ac installation",
+      "air conditioning services"
+    ],    
   authors: [{ name: "Rajan AC Services", url: "https://www.acservices.info" }],
   creator: "Rajan AC Services",
   openGraph: {
