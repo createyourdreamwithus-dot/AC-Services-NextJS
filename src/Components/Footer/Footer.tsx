@@ -11,7 +11,7 @@ export default function Footer() {
           <FaMapMarkerAlt className="text-[#f5d974]" size={20} />
           <p>
             <span className="font-semibold text-white">Address</span>{" "}
-            No.2, Mookachantram Main Road, MMC, Chennai - 600051
+            No.2, Moolachatram Main Road, MMC, Chennai - 600051
           </p>
         </div>
 
