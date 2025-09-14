@@ -16,23 +16,23 @@ export const metadata: Metadata = {
   title: "Rajan AC Services – AC, Washing Machine & RO Installation in Chennai",
   description:
     "Rajan AC Services offers expert installation and repair services for Air Conditioners, Washing Machines, and RO Water Purifiers in Chennai. Fast, affordable, and reliable service you can trust.",
-    keywords: [
-      "ac service chennai",
-      "washing machine repair",
-      "ro installation",
-      "ac installation chennai",
-      "rajan ac services",
-      "home appliance repair chennai",
-      "ac services",
-      "ac installation",
-      "water purifier servicing",
-      "ac maintenance",
-      "installation water purifier",
-      "ac repair",
-      "hvac service",
-      "split ac installation",
-      "air conditioning services"
-    ],    
+  keywords: [
+    "ac service chennai",
+    "washing machine repair",
+    "ro installation",
+    "ac installation chennai",
+    "rajan ac services",
+    "home appliance repair chennai",
+    "ac services",
+    "ac installation",
+    "water purifier servicing",
+    "ac maintenance",
+    "installation water purifier",
+    "ac repair",
+    "hvac service",
+    "split ac installation",
+    "air conditioning services",
+  ],
   authors: [{ name: "Rajan AC Services", url: "https://www.acservices.info" }],
   creator: "Rajan AC Services",
   openGraph: {
@@ -59,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <body
         className={`${josefin.className} bg-gray-50 text-gray-900 flex flex-col min-h-screen`}
       >
@@ -67,9 +67,31 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <WhatsAppButton />
-        <PhoneButton/>
+        <PhoneButton />
         <BackToTop />
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Rajan AC Services",
+image: "https://www.acservices.info/images/Logo/Logo.png",
+              url: "https://www.acservices.info",
+              telephone: "+91-9361259524",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "No.2, Moolachatram Main Road, MMC",
+                addressLocality: "Chennai",
+                addressRegion: "TN",
+                postalCode: "600051",
+                addressCountry: "IN",
+              },
+              openingHours: ["Mo-Su 00:00-23:59"],
+              priceRange: "₹₹",
+            }),
+          }}
+        />
       </body>
     </html>
   );
